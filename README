@@ -1,0 +1,20 @@
+This is a set of classes that behave like the existing "Int.random" and "Float.random".
+
+In fact, the "Unseedeed" variant just delegates to those very methods.
+
+The "Seeded" variant allows setting the random number seed; this is so that you can get
+a predictable, repeatable stream of random numbers.  This is useful for testing and some
+kinds of simulation.
+
+The basic usage is:
+
+   generator := SRandom.instance  // _This returns the unseeded generator_
+
+or
+
+   seededGenerator := SRandom.instance(SRandomStrategy.SeededGenerator)  // _This returns the seeded generator_
+
+See the "SRandomExamples" class in the "examples" directory for a fuller use and explanation.
+
+PERFORMANCE NOTE: The seeded generator is *much* slower than the unseeded generator, due (I think)
+to its usage of an Actor instance to hide the java.util.Random instance it uses.
