@@ -1,4 +1,6 @@
 // The fast, unseedable random number generator class
+//
+// Licensed under the Academic Free License version 3.0
 
 internal const class SRandomUnseeded : SRandom
 {

@@ -1,4 +1,6 @@
 // Test the SRandomUnseeded class
+//
+// Licensed under the Academic Free License version 3.0
 
 class SRandomUnseededTest : Test
 {

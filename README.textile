@@ -1,3 +1,5 @@
+Licensed under the Academic Free License version 3.0
+
 This is a set of classes that behave like the existing "Int.random" and "Float.random".
 
 In fact, the "Unseedeed" variant just delegates to those very methods.

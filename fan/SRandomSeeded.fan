@@ -1,4 +1,6 @@
 // The slower, seedable random number generator class
+//
+// Licensed under the Academic Free License version 3.0
 
 using [java] java.util::Random as JRandom
 
@@ -18,6 +20,8 @@ internal const class SRandomSeeded : SRandom
 
 	override Int randomInt(Range? r := null)
 	{
+		// The following code was stolen bodily :-) from the Fantom source code:
+		// src/sys/java/fan/sys/FanInt.java
 		Int v := actor.send(0).get(200ms)
 		if (r == null) return v
 		if (v < 0) v = -v

@@ -1,4 +1,6 @@
 // Show some examples of how the SRandom behavior works
+//
+// Licensed under the Academic Free License version 3.0
 
 class SRandomExamples
 {

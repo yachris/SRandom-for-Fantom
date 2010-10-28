@@ -1,4 +1,6 @@
 // Class which implements Random number generation for GEP
+//
+// Licensed under the Academic Free License version 3.0
 
 **
 ** SRandom - produce random numbers, matching the Int.random and Float.random APIs.
